@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Discount from "./components/discount/Discount";
+import Footer from "./components/footer/Footer";
+import Home from "./components/home/Home";
+import Signup from "./components/singup/Signup";
+import Social from "./components/social/Social";
+import {useState} from "react"
+import Message from "./components/message/Message";
 
 function App() {
+  const [messageOpen, setMessageOpen] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Message messageOpen = {messageOpen} setMessageOpen = {setMessageOpen}/>
+    <div className="app">
+      <div className="section">
+        <Home/>
+        <Discount/>
+        <Social/>
+        <Signup/>
+        <Footer/>
+      </div>
     </div>
+    </>
   );
 }
 

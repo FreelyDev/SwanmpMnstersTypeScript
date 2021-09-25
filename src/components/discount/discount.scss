@@ -1,0 +1,42 @@
+.discount{
+    background-color: rgb(21, 21, 21);
+    height: 378px;
+    z-index: 1;
+}
+.discountContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.discountTitle{
+    font-family: 'Cantora One', sans-serif;
+    font-size: 40px;
+    color: rgb(58, 112, 37);
+    margin-top: 20px;
+}
+.discountLine{
+    position: relative;
+    margin-top: 24px;
+    width: 50px;
+    border-color: rgb(42, 42, 42);
+    border-style: solid;
+    border-bottom-width: 2px;
+}
+.discountPage{
+    position: relative;
+    top: 50px;
+    width: 550px;
+    height: 180px;
+    background-color: rgb(21, 21, 21);
+    border:none;
+    @media screen and (max-width: 972px) {
+        width: 80%;
+    }
+}
+.discountSite{
+    background-color : rgb(21, 21, 21);
+    border:none;
+    width: 100%;
+    height: 180px;
+    
+}
